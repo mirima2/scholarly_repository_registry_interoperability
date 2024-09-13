@@ -162,8 +162,10 @@ for repo in repo_list:
         r3_coverage['lastUpdate'] += 1
     #questo vale perche' se esiste il campo policy allora sono mandatory sia policyName che policyUrl
     policy = root.findall('.//{http://www.re3data.org/schema/2-2}policy')
-    r3_coverage['policyName'] += len(policy)
-    r3_coverage['policyUrl'] += len(policy)
+    # r3_coverage['policyName'] += len(policy)
+    # r3_coverage['policyUrl'] += len(policy)
+    r3_coverage['policyName'] += 1#len(policy)
+    r3_coverage['policyUrl'] += 1#len(policy)
     dbAccess = root.find('.//{http://www.re3data.org/schema/2-2}databaseAccess')
     if dbAccess is not None :
         r3_coverage['databaseAccessType'] += 1
