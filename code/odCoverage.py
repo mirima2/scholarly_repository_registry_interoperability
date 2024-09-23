@@ -47,26 +47,6 @@ coverage = {'identifier':0,
 
 count = 0
 
-#'system_metadata.id\t
-# repository_metadata.name\t
-# repository_metadata.alternativename\t
-# repository_metadata.url\t
-# repository_metadata.description\t
-# repository_metadata.type\t
-# repository_metadata.content_languages\t
-# system_metadata.date_modified\t
-# system_metadata.date_created\t
-# repository_metadata.content_subjects\t
-# repository_metadata.content_types\t
-# organization\t
-# policy_urls\t
-# repository_metadata.software\t
-# repository_metadata.oai_url\t
-# system_metadata.publicly_visible\t
-# repository_metadata.repository_status\t
-# repository_metadata.fulltext_record_count\t
-# repository_metadata.metadata_record_count\n'
-#{"repository_metadata": {"content_types": ["journal_articles", "bibliographic_references", "theses_and_dissertations", "unpub_reports_and_working_papers", "books_chapters_and_sections", "learning_objects"], "type": "institutional", "name": [{"name": "Alexandria Research Platform", "language": "en", "preferred_phrases": [{"phrase": "Name", "language": "en", "value": "name"}], "preferred": "name", "language_phrases": [{"value": "en", "language": "en", "phrase": "English"}]}], "metadata_record_count": 43608, "software": {"name_phrases": [{"value": "eprints", "language": "en", "phrase": "EPrints"}], "name": "eprints"}, "content_subjects": ["arts", "engineering", "health_and_medicine", "humanities", "mathematics", "science", "social_sciences", "technology"], "content_types_phrases": [{"phrase": "Journal Articles", "language": "en", "value": "journal_articles"}, {"phrase": "Bibliographic References", "language": "en", "value": "bibliographic_references"}, {"value": "theses_and_dissertations", "language": "en", "phrase": "Theses and Dissertations"}, {"language": "en", "value": "unpub_reports_and_working_papers", "phrase": "Reports and Working Papers"}, {"language": "en", "value": "books_chapters_and_sections", "phrase": "Books, Chapters and Sections"}, {"language": "en", "value": "learning_objects", "phrase": "Learning Objects"}], "full_text_record_count": 0, "url": "http://www.alexandria.unisg.ch/", "oai_url": "https://www.alexandria.unisg.ch/cgi/oai2", "content_subjects_phrases": [{"value": "arts", "language": "en", "phrase": "Arts"}, {"language": "en", "value": "engineering", "phrase": "Engineering"}, {"language": "en", "value": "health_and_medicine", "phrase": "Health and Medicine"}, {"value": "humanities", "language": "en", "phrase": "Humanities"}, {"phrase": "Mathematics", "language": "en", "value": "mathematics"}, {"language": "en", "value": "science", "phrase": "Science"}, {"phrase": "Social Sciences", "value": "social_sciences", "language": "en"}, {"phrase": "Technology", "value": "technology", "language": "en"}], "type_phrases": [{"phrase": "Institutional", "value": "institutional", "language": "en"}]}, "organisation": {"country": "ch", "identifiers": [{"type": "ror", "identifier": "https://ror.org/0561a3s31", "type_phrases": [{"phrase": "ROR ID", "language": "en", "value": "ror"}]}], "country_phrases": [{"language": "en", "value": "ch", "phrase": "Switzerland"}], "url": "https://www.unisg.ch", "name": [{"preferred": "name", "language_phrases": [{"value": "en", "language": "en", "phrase": "English"}], "language": "en", "preferred_phrases": [{"value": "name", "language": "en", "phrase": "Name"}], "name": "University of St. Gallen"}]}, "system_metadata": {"date_modified": "2022-07-11 15:50:30", "id": 2, "date_created": "2006-04-04 12:43:18", "publicly_visible_phrases": [{"phrase": "Yes", "language": "en", "value": "yes"}], "publicly_visible": "yes", "uri": "https://v2.sherpa.ac.uk/id/repository/2"}}
 for line in od:
     count += 1
     repo = json.loads(line)
